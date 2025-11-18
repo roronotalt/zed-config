@@ -7,6 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "wsl_connections": [
+    {
+      "distro_name": "Ubuntu",
+      "user": null,
+      "projects": []
+    }
+  ],
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -27,5 +34,10 @@
     "mode": "system",
     "light": "Tokyo Night Light",
     "dark": "Tokyo Night Storm"
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 60000
+    }
   }
 }

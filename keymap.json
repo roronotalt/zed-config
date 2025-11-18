@@ -7,9 +7,16 @@
 // from the command palette.
 [
   {
+    "context": "",
+    "bindings": {
+      "ctrl-s": "workspace::Save"
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle"
+      "shift shift": "file_finder::Toggle",
+      "ctrl-p": "editor::ToggleFocus"
     }
   },
   {
@@ -21,9 +28,8 @@
   {
     "context": "ProjectPanel || (Editor && VimControl && !VimWaiting && !menu)",
     "bindings": {
-      "ctrl-h": "workspace::ToggleLeftDock",
-      "ctrl-j": "workspace::ToggleBottomDock",
-      "ctrl-l": "workspace::ToggleRightDock",
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "ctrl-l": "agent::ToggleFocus",
       "-": "project_panel::ToggleFocus"
     }
   },
