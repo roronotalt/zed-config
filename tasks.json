@@ -12,5 +12,12 @@
     "reveal": "no_focus",
     "hide": "on_success",
     "shell": { "program": "bash" }
+  },
+  {
+    "label": "git amend",
+    "command": "git add . && git commit --amend --no-edit && git push",
+    "reveal": "no_focus",
+    "hide": "on_success",
+    "shell": { "program": "bash" }
   }
 ]
