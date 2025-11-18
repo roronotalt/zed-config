@@ -40,7 +40,6 @@
       // Directory expansion
       "l": "project_panel::ExpandSelectedEntry",
       "h": "project_panel::CollapseSelectedEntry"
-      // "shift-d": "project_panel::Delete"
     }
   },
   {

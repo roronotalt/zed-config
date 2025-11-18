@@ -12,13 +12,17 @@
     "metrics": false
   },
   "vim_mode": true,
-  "ui_font_size": 12,
+  "relative_line_numbers": "enabled",
+  "ui_font_size": 11,
   "ui_font_family": "Fira Code",
   "terminal": {
     "font_size": 10,
-    "font_family": ".ZedMono"
+    "font_family": ".ZedMono",
+    "shell": {
+      "program": "bash"
+    }
   },
-  "buffer_font_size": 11,
+  "buffer_font_size": 10,
   "theme": {
     "mode": "system",
     "light": "Tokyo Night Light",
