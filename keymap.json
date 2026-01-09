@@ -49,7 +49,7 @@
     }
   },
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor",
     "bindings": {
       "tab": "editor::Indent",
       "shift-tab": "editor::Backtab"
