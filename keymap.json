@@ -9,29 +9,38 @@
   {
     "context": "",
     "bindings": {
-      "ctrl-s": "workspace::Save"
-    }
+      "ctrl-s": "workspace::Save",
+      "ctrl-h": "workspace::ToggleLeftDock",
+      "ctrl-l": "workspace::ToggleRightDock",
+      "ctrl-p": "editor::ToggleFocus",
+      "ctrl-j": "terminal_panel::Toggle",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
       "shift shift": "file_finder::Toggle",
-      "ctrl-p": "editor::ToggleFocus"
-    }
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "k j": "vim::NormalBefore"
-    }
+      "k j": "vim::NormalBefore",
+    },
   },
   {
     "context": "ProjectPanel || (Editor && VimControl && !VimWaiting && !menu)",
     "bindings": {
-      "ctrl-j": "terminal_panel::ToggleFocus",
-      "ctrl-l": "agent::ToggleFocus",
-      "-": "project_panel::ToggleFocus"
-    }
+      "-": "project_panel::ToggleFocus",
+      "ctrl-k j": "pane::SplitDown",
+      "ctrl-k h": "pane::SplitLeft",
+      "ctrl-k l": "pane::SplitRight",
+      "ctrl-k k": "pane::SplitUp",
+      "ctrl-k ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-k ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k ctrl-k": "workspace::ActivatePaneUp",
+    },
   },
   {
     "context": "ProjectPanel && not_editing",
@@ -45,14 +54,14 @@
       "d": "project_panel::Delete",
       // Directory expansion
       "l": "project_panel::ExpandSelectedEntry",
-      "h": "project_panel::CollapseSelectedEntry"
-    }
+      "h": "project_panel::CollapseSelectedEntry",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
       "tab": "editor::Indent",
-      "shift-tab": "editor::Backtab"
-    }
-  }
+      "shift-tab": "editor::Backtab",
+    },
+  },
 ]
