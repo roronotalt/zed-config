@@ -6,62 +6,62 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  {
-    "context": "",
-    "bindings": {
-      "ctrl-s": "workspace::Save",
-      "ctrl-h": "workspace::ToggleLeftDock",
-      "ctrl-l": "workspace::ToggleRightDock",
-      "ctrl-p": "editor::ToggleFocus",
-      "ctrl-j": "terminal_panel::Toggle",
+    {
+        "context": "",
+        "bindings": {
+            "ctrl-s": "workspace::Save",
+            "ctrl-h": "workspace::ToggleLeftDock",
+            "ctrl-l": "workspace::ToggleRightDock",
+            "ctrl-p": "editor::ToggleFocus",
+            "ctrl-j": "terminal_panel::Toggle",
+        },
     },
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "shift shift": "file_finder::Toggle",
+    {
+        "context": "Workspace",
+        "bindings": {
+            "shift shift": "file_finder::Toggle",
+        },
     },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "k j": "vim::NormalBefore",
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "k j": "vim::NormalBefore",
+        },
     },
-  },
-  {
-    "context": "ProjectPanel || (Editor && VimControl && !VimWaiting && !menu)",
-    "bindings": {
-      "-": "project_panel::ToggleFocus",
-      "ctrl-k j": "pane::SplitDown",
-      "ctrl-k h": "pane::SplitLeft",
-      "ctrl-k l": "pane::SplitRight",
-      "ctrl-k k": "pane::SplitUp",
-      "ctrl-k ctrl-j": "workspace::ActivatePaneDown",
-      "ctrl-k ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-k ctrl-l": "workspace::ActivatePaneRight",
-      "ctrl-k ctrl-k": "workspace::ActivatePaneUp",
+    {
+        "context": "ProjectPanel || (Editor && VimControl && !VimWaiting && !menu)",
+        "bindings": {
+            "-": "project_panel::ToggleFocus",
+            "ctrl-p j": "pane::SplitDown",
+            "ctrl-p h": "pane::SplitLeft",
+            "ctrl-p l": "pane::SplitRight",
+            "ctrl-p k": "pane::SplitUp",
+            "ctrl-p ctrl-j": "workspace::ActivatePaneDown",
+            "ctrl-p ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-p ctrl-l": "workspace::ActivatePaneRight",
+            "ctrl-p ctrl-k": "workspace::ActivatePaneUp",
+        },
     },
-  },
-  {
-    "context": "ProjectPanel && not_editing",
-    "bindings": {
-      "o": "project_panel::NewDirectory",
-      "a": "project_panel::NewFile",
-      "r": "project_panel::Rename",
-      "x": "project_panel::Cut",
-      "y": "project_panel::Copy",
-      "p": "project_panel::Paste",
-      "d": "project_panel::Delete",
-      // Directory expansion
-      "l": "project_panel::ExpandSelectedEntry",
-      "h": "project_panel::CollapseSelectedEntry",
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "o": "project_panel::NewDirectory",
+            "a": "project_panel::NewFile",
+            "r": "project_panel::Rename",
+            "x": "project_panel::Cut",
+            "y": "project_panel::Copy",
+            "p": "project_panel::Paste",
+            "d": "project_panel::Delete",
+            // Directory expansion
+            "l": "project_panel::ExpandSelectedEntry",
+            "h": "project_panel::CollapseSelectedEntry",
+        },
     },
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "tab": "editor::Indent",
-      "shift-tab": "editor::Backtab",
+    {
+        "context": "Editor",
+        "bindings": {
+            "tab": "editor::Indent",
+            "shift-tab": "editor::Backtab",
+        },
     },
-  },
 ]
